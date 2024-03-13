@@ -10,7 +10,9 @@
     <h1>Réducteur d'URL</h1>
     <form action="/shorten" method="post">
         <label for="long_url">URL à raccourcir :</label>
-        <input type="text" id="long_url" name="long_url" required>
+        <input type="url" id="long_url" name="long_url" placeholder="Entrez l'URL à raccourcir" required>
+        <label for="custom_alias">Alias personnalisé (optionnel) :</label>
+        <input type="text" id="custom_alias" name="custom_alias" placeholder="Entrez un alias personnalisé">
         <button type="submit">Raccourcir</button>
     </form>
 </body>
